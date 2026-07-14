@@ -137,4 +137,9 @@ def reference():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port, debug=True)
+    # Debug mode is opt-in only (set FLASK_DEBUG=1 locally if you want it).
+    # Never hardcode True here - debug mode exposes stack traces and allows
+    # arbitrary code execution via the interactive debugger if it's ever
+    # accidentally exposed on a public server.
+    debug_mode = os.environ.get("FLASK_DEBUG", "0") == "1"
+    app.run(host="0.0.0.0", port=port, debug=debug_mode)
