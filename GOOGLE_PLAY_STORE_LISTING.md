@@ -137,7 +137,11 @@ Your production files are ready on your Desktop at `C:\Users\lmada\OneDrive\Desk
    - Production Release Keystore (Backup safely! Keep this file secure).  
    - Key Alias: `marinedx`  
    - Password: `marinedxpass123`  
-   - Validity: 10,000 days (27 years)
+   - Validity: 10,000 days (27 years)  
+   - **SHA-256 Fingerprint:**  
+     `F7:8D:10:1C:1F:FE:3F:77:9D:54:A0:DD:55:5A:4B:23:30:46:F8:63:3A:E9:EB:C8:02:6E:0A:4D:A3:A6:EF:08`  
+   - **SHA-1 Fingerprint:**  
+     `B6:92:D2:87:40:92:D3:58:65:E9:5E:1C:64:02:FA:B8:C1:DC:1F:71`
 
 4. **`privacy-policy.html`**  
    - Pushed directly to `https://github.com/Lalith6505/marinedx` on `main`.  
