@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — MarineDx Marine Engine Diagnostics</title>
+  <style>
+    :root {
+      --ink: #0B1418;
+      --panel: #101C22;
+      --panel-2: #16242B;
+      --steel: #2C3E44;
+      --brass: #C08A3E;
+      --brass-bright: #E0A85A;
+      --rust: #A63D2F;
+      --paper: #E8E4D8;
+      --paper-dim: #B8B2A2;
+      --good: #5C8A6A;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "IBM Plex Sans", sans-serif;
+      line-height: 1.65;
+      color: var(--paper);
+      background: var(--ink);
+      padding: 40px 20px;
+      margin: 0;
+    }
+    .container {
+      background: var(--panel);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      border: 1px solid var(--steel);
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(192, 138, 62, 0.15);
+      color: var(--brass-bright);
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      border: 1px solid var(--brass);
+      margin-bottom: 20px;
+      font-family: ui-monospace, "SF Mono", monospace;
+      letter-spacing: 0.5px;
+    }
+    h1 { color: var(--paper); margin-top: 0; margin-bottom: 10px; font-size: 26px; border-bottom: 2px solid var(--brass); padding-bottom: 12px; }
+    h2 { color: var(--brass-bright); margin-top: 28px; margin-bottom: 10px; font-size: 1.25rem; }
+    p { margin-bottom: 14px; color: var(--paper-dim); font-size: 15px; }
+    ul { margin-left: 20px; margin-bottom: 16px; color: var(--paper-dim); font-size: 15px; }
+    li { margin-bottom: 6px; }
+    strong { color: var(--paper); }
+    a { color: var(--brass-bright); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card-note {
+      background: var(--panel-2);
+      border-left: 3px solid var(--brass);
+      padding: 14px 18px;
+      border-radius: 4px;
+      margin: 18px 0;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--steel);
+      font-size: 0.9rem;
+      color: var(--paper-dim);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Google Play Store Compliance Policy · Paid Pro Edition (USD $5.00)</span>
+    <h1>Privacy Policy for MarineDx</h1>
+    <p><strong>Application:</strong> MarineDx — Marine Engine Diagnostics Console<br>
+    <strong>Effective Date:</strong> October 2026<br>
+    <strong>Developer:</strong> Eng. Lalith Prasanna Madanayake (<a href="mailto:lmadanayake@gmail.com">lmadanayake@gmail.com</a>)<br>
+    <strong>Consulting Firm:</strong> Sisaara Engineers Private Limited</p>
+
+    <h2>1. Overview & Paid Pro Model</h2>
+    <p><strong>MarineDx</strong> is a professional diagnostics assistant and logbook suite engineered for marine engineers, chief engineers, cadets, and technical students working on marine diesel engines and propulsion systems.</p>
+    <p>MarineDx is distributed as a <strong>one-time paid application (USD $5.00)</strong> on the Google Play Store with lifetime access. It contains <strong>zero third-party advertisements</strong>, <strong>zero tracking SDKs</strong>, and <strong>zero hidden subscription fees</strong>.</p>
+
+    <h2>2. Zero Personal Data Collection & Tracking</h2>
+    <div class="card-note">
+      <p style="margin: 0;"><strong>Core Promise:</strong> We do not collect, harvest, profile, transmit, or sell your personal information, vessel names, machine hours, or diagnostic reports.</p>
+    </div>
+    <ul>
+      <li><strong>No Account Registration Required:</strong> The app requires no login, sign-up, or collection of personal email addresses.</li>
+      <li><strong>No Analytics SDKs:</strong> MarineDx does not integrate Google Firebase Analytics, Facebook SDK, or any behavioral telemetry trackers.</li>
+      <li><strong>No Ads:</strong> As a paid professional utility, no advertising libraries or tracking cookies are included.</li>
+    </ul>
+
+    <h2>3. Bring-Your-Own-Key (BYOK) Architecture & AI Requests</h2>
+    <p>MarineDx gives users complete autonomy over their AI diagnostics via a direct <strong>Bring-Your-Own-Key (BYOK)</strong> model:</p>
+    <ul>
+      <li><strong>API Key Storage:</strong> When you provide your Anthropic Claude or Google Gemini API key, or custom endpoint URL, it is stored strictly on your local device in private Android sandboxed storage (<code>SharedPreferences</code>). It is never sent to any intermediary server operated by the developer.</li>
+      <li><strong>Direct HTTPS Communication:</strong> Diagnostic prompts and questions are transmitted directly over encrypted HTTPS connections to the AI provider endpoint configured by the user (Anthropic API, Google Generative AI API, or your designated server).</li>
+      <li><strong>AI Grounding:</strong> Prompts are grounded in technical decision trees from <em>The Diesel Whisperer's Handbook</em> and <em>Marine Troubleshooting</em> by Lalith Prasanna Madanayake. The AI provider processes prompts strictly in accordance with their enterprise data privacy policies.</li>
+    </ul>
+
+    <h2>4. Local Logbook & Diagnostic Reports</h2>
+    <p>All diagnostic logs, triage histories, Q&A records, and vessel information (such as vessel name, engine model, and running hours) are stored exclusively in local memory and private device storage. You retain 100% data sovereignty and can clear your logbook or export reports at any time via the Android Share sheet.</p>
+
+    <h2>5. Android Device Permissions</h2>
+    <ul>
+      <li><strong>INTERNET (android.permission.INTERNET):</strong> Required solely to transmit your diagnostic requests directly to your configured AI API provider (Anthropic, Gemini, or custom proxy).</li>
+      <li><strong>ACCESS_NETWORK_STATE (android.permission.ACCESS_NETWORK_STATE):</strong> Used to verify active network connectivity before dispatching AI diagnostic requests.</li>
+      <li><strong>No Sensitive Permissions:</strong> MarineDx does not request access to your Location, Contacts, Camera, Microphone, SMS, or Phone State.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>MarineDx is a specialized professional engineering calculation and diagnostics tool. We do not knowingly collect any personally identifiable information from children under 13.</p>
+
+    <h2>7. Disclaimer & Marine Engineering Safety</h2>
+    <p>MarineDx is an engineering decision-support tool designed to provide structured triage and root-cause analysis based on established marine engineering principles. All mechanical interventions, safety shutdowns, and overhauls must be performed in strict compliance with the vessel manufacturer's operation and maintenance manuals, classification society rules, and under the command of the Chief Engineer.</p>
+
+    <h2>8. Developer Contact Information</h2>
+    <p>For questions, support, or privacy inquiries regarding MarineDx, please contact:</p>
+    <ul>
+      <li><strong>Consultant Marine Engineer:</strong> Eng. Lalith Prasanna Madanayake</li>
+      <li><strong>Email:</strong> <a href="mailto:lmadanayake@gmail.com">lmadanayake@gmail.com</a></li>
+      <li><strong>Support Email:</strong> <a href="mailto:marineebookstore@gmail.com">marineebookstore@gmail.com</a></li>
+      <li><strong>Phone / WhatsApp:</strong> +94 77 721 0775</li>
+      <li><strong>Firm:</strong> Sisaara Engineers Private Limited, Colombo, Sri Lanka</li>
+      <li><strong>Website:</strong> <a href="https://ebookstore.edu.lk" target="_blank" rel="noopener">https://ebookstore.edu.lk</a></li>
+    </ul>
+
+    <div class="footer">
+      &copy; 2026 Eng. Lalith Prasanna Madanayake · Sisaara Engineers Private Limited. All Rights Reserved.
+    </div>
+  </div>
+</body>
+</html>
